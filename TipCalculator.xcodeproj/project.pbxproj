@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D065E5C22374D314000A8733 /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D065E5C22374D314000A8733 /* TippyCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TippyCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D065E5C52374D314000A8733 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D065E5C72374D314000A8733 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D065E5C92374D314000A8733 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		D065E5C32374D314000A8733 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D065E5C22374D314000A8733 /* TipCalculator.app */,
+				D065E5C22374D314000A8733 /* TippyCalc.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 			);
 			name = TipCalculator;
 			productName = TipCalculator;
-			productReference = D065E5C22374D314000A8733 /* TipCalculator.app */;
+			productReference = D065E5C22374D314000A8733 /* TippyCalc.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -292,7 +292,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.justinmatsnev.TipCalculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TippyCalc;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,7 +310,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.justinmatsnev.TipCalculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TippyCalc;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

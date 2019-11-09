@@ -14,7 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet var taxTextfield : UITextField!
     @IBOutlet var tipControl : UISegmentedControl!
     @IBOutlet var totalAmtLbl : UILabel!
-    @IBOutlet var calculateButton : UIButton!
+    @IBOutlet var calculateButton : UIButton! {
+        didSet {
+            calculateButton.layer.cornerRadius = 7.0
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,3 +83,4 @@ extension ViewController : UITextFieldDelegate {
         return true
     }
 }
+
