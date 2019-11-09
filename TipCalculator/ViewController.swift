@@ -22,13 +22,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func calculateTapped(sender : UIButton) {
+        view.endEditing(true)
         
-        guard let subTotal = subTotalTextfield.text else {
+        guard let subTotal = subTotalTextfield.text, subTotal != "" else {
             alertUser(field: "Sub Total", textField: subTotalTextfield)
             return
         }
         
-        guard let tax = taxTextfield.text else {
+        guard let tax = taxTextfield.text, tax != "" else {
             alertUser(field: "Tax", textField: taxTextfield)
             return
         }
@@ -56,9 +57,9 @@ class ViewController: UIViewController {
     }
     
     private func alertUser(field : String, textField : UITextField) {
-        let alertView = UIAlertController(title: "Missing Field", message: "Uh Oh! Seems you missed a field, please enter the " + field + " amount.", preferredStyle: .alert)
+        let alertView = UIAlertController(title: "Missing Field!", message: "Uh Oh! You forgot to input a " + field + " amount." , preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Got it", style: .default) { (action) in
-            self.dismiss(animated: true, completion: nil)
+            //self.dismiss(animated: true, completion: nil)
             textField.becomeFirstResponder()
         }
         alertView.addAction(okAction)
